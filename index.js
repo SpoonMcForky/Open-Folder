@@ -46,7 +46,7 @@ module.exports = class Open extends Plugin {
         let path = args.toString()
         
         if (args == "") {
-            openPath(pluginsFolder.replace(String.fromCharCode(92),String.fromCharCode(47)))
+            openPath(powercord.basePath.replace(String.fromCharCode(92),String.fromCharCode(47)))
         } else if ((args == "bd") && window.BdApi) {
             openPath(BdApi.Plugins.folder)
         } else if (args == "pc") {
