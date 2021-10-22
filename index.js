@@ -1,6 +1,5 @@
 const { Plugin } = require('powercord/entities');
 const { shell: { openPath } } = require('electron')
-const Settings = require("./components/settings.jsx");
 module.exports = class Open extends Plugin {
     startPlugin() {
         powercord.api.commands.registerCommand({
@@ -10,12 +9,6 @@ module.exports = class Open extends Plugin {
             usage: '{c} [path]',
             executor: this.openFolder.bind(this)
         });
-        powercord.api.settings.registerSettings("openfolder", {
-            category: this.entityID,
-            label: "Open Folder",
-            render: Settings
-        });
-        
     };
     _ensureSetting(name, defaultValue) {
         this.settings.set(name, this.settings.get(name, defaultValue));
