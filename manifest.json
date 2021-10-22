@@ -1,0 +1,8 @@
+{
+  "name": "Open Folder",
+  "version": "1.0.0",
+  "description": "Opens a path with the command 'open'.",
+  "author": "SpoonMcForky#8008",
+  "license": "MIT",
+  "repo": "https://github.com/SpoonMcForky/Open-Folder"
+}
